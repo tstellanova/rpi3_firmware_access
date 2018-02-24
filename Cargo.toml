@@ -1,0 +1,6 @@
+[package]
+name = "rpi3_firmware_access"
+version = "0.1.0"
+authors = ["Todd Stellanova <tstellanova@gmail.com>"]
+
+[dependencies]
