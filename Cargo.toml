@@ -4,3 +4,5 @@ version = "0.1.0"
 authors = ["Todd Stellanova <tstellanova@gmail.com>"]
 
 [dependencies]
+nix = "0.10.0"
+
