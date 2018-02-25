@@ -9,9 +9,9 @@ LICENSE: See LICENSE file
 #[macro_use]
 extern crate nix;
 
-mod bindings;
+pub mod bindings;
 mod core;
-mod utils;
+pub mod utils;
 
 
 #[cfg(test)]

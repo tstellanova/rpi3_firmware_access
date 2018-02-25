@@ -22,3 +22,9 @@ pub fn get_soc_temperature(temp_id: u32) -> u32 {
   buf[1]
 }
 
+pub fn get_hw_value(tag: RPiFwPropTag) -> u32 {
+  let mut buf: [u32; 2] = [0; 2];
+  touch_fw_property(tag, &mut buf);
+  buf[0]
+}
+
