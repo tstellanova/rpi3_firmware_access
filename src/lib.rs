@@ -6,8 +6,6 @@ LICENSE: See LICENSE file
 
 #![crate_type = "lib"]
 
-#[macro_use]
-extern crate nix;
 
 pub mod bindings;
 mod core;

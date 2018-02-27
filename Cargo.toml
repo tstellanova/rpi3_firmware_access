@@ -1,8 +1,7 @@
 [package]
 name = "rpi3_firmware_access"
 version = "0.1.0"
-authors = ["Todd Stellanova <tstellanova@gmail.com>"]
+authors = ["Todd Stellanova <tstellanova@users.noreply.github.com>"]
 
 [dependencies]
-nix = "0.10.0"
 
