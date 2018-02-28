@@ -1,4 +1,9 @@
-#![allow(dead_code)]
+/*
+Copyright (c) 2018 Todd Stellanova
+
+LICENSE: See LICENSE file
+*/
+
 
 use std::os::unix::io::{ AsRawFd };
 use std::fs::File;
@@ -79,18 +84,5 @@ pub fn touch_fw_property(tag: RPiFwPropTag, prop_data: &mut [u32] ) {
     println!("req_result: {} ", req_result);
   }
 
-}
-
-pub fn read_gpio_value(gpio: u32) -> u32 {
-  let mut buf: [u32; 2] = [gpio, 0]; 
-  touch_fw_property(RPiFwPropTag::GetGpioState, &mut buf);
-  buf[1]
-}
-
-pub fn write_gpio_value(gpio: u32, state: u8) -> u32 {
-  let write_val = { if 0 == state { 0 } else { 1 } };
-  let mut buf: [u32; 2] = [gpio, write_val];
-  touch_fw_property(RPiFwPropTag::GetGpioState, &mut buf);
-  buf[1]
 }
 
