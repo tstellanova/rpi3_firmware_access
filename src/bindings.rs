@@ -114,3 +114,10 @@ pub enum RPiFwClockIDs  {
   PIXEL = 0x000000009, 
   PWM = 0x00000000a, 
 }
+
+/// Some commonly used extended GPIO values
+pub enum RPiFwExtGpioIDs {
+  CameraPower= 133, // Power for the RPi camera itself
+  CameraLED= 134, // Power for the RPi camera LED
+  PiPowerQuality = 135, // 1 if power is solid +5V, 0 if in low voltage (brownout) condition
+}

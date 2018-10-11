@@ -12,7 +12,7 @@ use core::*;
 /// - 1 indicates that power is good 
 /// - 0 indicates that main supply voltage has dropped below +5V
 pub fn get_power_status() -> u32 {
-  read_gpio_value(135)
+  read_gpio_value(RPiFwExtGpioIDs::PiPowerQuality as u32 )
 }
 
 /// Get the temperature of the SOC in Celsius
